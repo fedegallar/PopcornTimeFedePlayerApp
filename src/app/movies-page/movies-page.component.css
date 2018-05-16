@@ -1,0 +1,58 @@
+    ul {
+        color: white;
+        background-color: black;
+        margin-bottom: 10px;
+        position: fixed;
+        width: 100%;
+        padding-left: 10%;
+        padding-bottom: 40px;
+    }
+    
+    ul li {
+        text-align: center;
+        width: 25%;
+        display: inline-block;
+        padding-bottom: 40px;
+    }
+    
+    ul li a {
+        text-decoration: none;
+    }
+    
+    ul li:hover {
+        color: black;
+        background-color: white;
+    }
+    
+    ul li a:visited {
+        color: inherit;
+    }
+    
+    article {
+        display: inline-block;
+        margin-top: 60px;
+        margin-left: 1%;
+        margin-bottom: 2%;
+        padding: 0%;
+        width: 400px;
+        text-align: center;
+        background-color: black;
+        border: 1px solid black;
+    }
+    
+    article img {
+        width: 100%;
+        height: auto;
+    }
+    
+    article h4 {
+        display: block;
+        font-size: 100%;
+        color: white;
+    }
+    
+    article:hover {
+        background-color: black;
+        opacity: 0.75;
+        border: 1px solid white;
+    }

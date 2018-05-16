@@ -1,0 +1,11 @@
+<ul>
+    <li><a (click)="ChangePageDown()" href="#">Anterior</a></li>
+    <li>
+        <h4>{{p}}</h4>
+    </li>
+    <li><a (click)="ChangePageUp()" href="#">Siguiente</a></li>
+</ul>
+<article (click)="LoadMoviePage(mov.imdb_id)" *ngFor="let mov of movies">
+    <img src="{{mov.images.poster}}">
+    <h4>{{mov.title}}</h4>
+</article>
