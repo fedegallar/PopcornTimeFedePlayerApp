@@ -8,7 +8,11 @@ export class MoviesListServiceService {
 
   constructor(private http: Http) { }
   getMoviePagep(p:number): Promise<Movie[]>{
+<<<<<<< HEAD
     const url = 'https://tv-v2.api-fetch.website/movies/'+p.toString()+'?sort=trending';
+=======
+    const url = 'https://tv-v2.api-fetch.website/movies/'+p.toString();
+>>>>>>> 8d00eb36a605bc7b75b322bffb56ad6560d0aa0d
     return this.http.get(url).toPromise().then(response => response.json() as Movie[]).catch(this.handleError);
   }
 

@@ -46,7 +46,11 @@ interface IRating {
     loved: number;
     hated: number;
 }
+<<<<<<< HEAD
 
 // CUALQUIER COSA EL COMANDO DE ABAJO VA COMO PIÑA Y ME PERMITE ARMAR ESTO:
+=======
+//CUALQUIER COSA EL COMANDO DE ABAJO VA COMO PIÑA Y ME PERMITE ARMAR ESTO:
+>>>>>>> 8d00eb36a605bc7b75b322bffb56ad6560d0aa0d
 
 // curl https://tv-v2.api-fetch.website/movie/tt1431045 | json-ts --stdin

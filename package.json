@@ -25,7 +25,11 @@
     "core-js": "^2.4.1",
     "ngx-pagination": "^3.1.1",
     "rxjs": "^5.4.2",
+<<<<<<< HEAD
     "webtorrent-hybrid": "^1.0.6",
+=======
+    "webtorrent": "^0.99.3",
+>>>>>>> 8d00eb36a605bc7b75b322bffb56ad6560d0aa0d
     "zone.js": "^0.8.14"
   },
   "devDependencies": {

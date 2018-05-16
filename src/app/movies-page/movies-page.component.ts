@@ -17,7 +17,11 @@ export class MoviesPageComponent implements OnInit {
   constructor(private movielistservice: MoviesListServiceService, private router: Router) { }
   ngOnInit() {
     this.movielistservice.getMoviePagep(this.p).then(m => this.movies = m);
+<<<<<<< HEAD
     this.movielistservice.getPagesNumber().then(pm => this.pmax = pm );
+=======
+    this.movielistservice.getPagesNumber().then(pm =>this.pmax=pm );
+>>>>>>> 8d00eb36a605bc7b75b322bffb56ad6560d0aa0d
     // SE LEE ASI!!!!: --->> EJEMPLO HIPOTETICO. NO ANDA EL COMANDO  console.log(this.movies[1].torrents.en["1080p"].url); 
   }
   ChangePageDown(){

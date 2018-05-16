@@ -1,7 +1,11 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
+<<<<<<< HEAD
     "name": "PopcornTimeFedePlayerApp"
+=======
+    "name": "popcorn-time-player-app"
+>>>>>>> 8d00eb36a605bc7b75b322bffb56ad6560d0aa0d
   },
   "apps": [
     {
@@ -36,6 +40,7 @@
   },
   "lint": [
     {
+<<<<<<< HEAD
       "project": "src/tsconfig.app.json"
     },
     {
@@ -43,6 +48,18 @@
     },
     {
       "project": "e2e/tsconfig.e2e.json"
+=======
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+>>>>>>> 8d00eb36a605bc7b75b322bffb56ad6560d0aa0d
     }
   ],
   "test": {
@@ -54,4 +71,8 @@
     "styleExt": "css",
     "component": {}
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 8d00eb36a605bc7b75b322bffb56ad6560d0aa0d
