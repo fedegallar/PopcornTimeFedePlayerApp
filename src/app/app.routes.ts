@@ -8,11 +8,7 @@ import { TorrentplayerComponent } from './torrentplayer/torrentplayer.component'
 export const routes: Routes = [
     {path: '', component: MoviesPageComponent},
     {path: 'movie-view/:imdb_id', component: MovieViewComponent},
-<<<<<<< HEAD
     {path: 'torrentplayer/:magnet',component: TorrentplayerComponent}
-=======
-    {path: 'torrentplayer',component: TorrentplayerComponent}
->>>>>>> 8d00eb36a605bc7b75b322bffb56ad6560d0aa0d
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(routes);

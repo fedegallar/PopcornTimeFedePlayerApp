@@ -1,17 +1,9 @@
 <ul>
-<<<<<<< HEAD
     <li><a (click)="ChangePageDown()" href="#">Anterior</a></li>
     <li>
         <h4>{{p}}</h4>
     </li>
     <li><a (click)="ChangePageUp()" href="#">Siguiente</a></li>
-=======
-    <li><a (click)="ChangePageUp()" href="#">Siguiente</a></li>
-    <li>
-        <h4>{{p}}</h4>
-    </li>
-    <li><a (click)="ChangePageDown()" href="#">Anterior</a></li>
->>>>>>> 8d00eb36a605bc7b75b322bffb56ad6560d0aa0d
 </ul>
 <article (click)="LoadMoviePage(mov.imdb_id)" *ngFor="let mov of movies">
     <img src="{{mov.images.poster}}">
