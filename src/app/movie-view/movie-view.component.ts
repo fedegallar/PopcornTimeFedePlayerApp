@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute,Router } from '@angular/router';
-import { AnimateTimings } from '@angular/core/src/animation/dsl';
 import { Movie } from '../Movie';
 import { MovieViewService } from '../movie-view.service';
 
@@ -18,7 +17,9 @@ export class MovieViewComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe(params =>{this.imdb_id = params['imdb_id']});
-    this.movieviewservice.getMovie(this.imdb_id).then(m=> this.mov=m);
+    this.movieviewservice.getMovie(this.imdb_id).subscribe((data)=>{
+      this.mov = data;
+    })
   }
   LoadTorrentPlayer(magnet:string){
     this.router.navigate(['/torrentplayer', magnet]);

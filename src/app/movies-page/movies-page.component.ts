@@ -16,8 +16,8 @@ export class MoviesPageComponent implements OnInit {
   movies : Movie[];
   constructor(private movielistservice: MoviesListServiceService, private router: Router) { }
   ngOnInit() {
-    this.movielistservice.getMoviePagep(this.p).then(m => this.movies = m);
-    this.movielistservice.getPagesNumber().then(pm => this.pmax = pm );
+    this.movielistservice.getMoviePagep(this.p).subscribe(m => this.movies = m);
+    this.movielistservice.getPagesNumber().subscribe(pm => this.pmax = pm );
     // SE LEE ASI!!!!: --->> EJEMPLO HIPOTETICO. NO ANDA EL COMANDO  console.log(this.movies[1].torrents.en["1080p"].url); 
   }
   ChangePageDown(){
@@ -25,7 +25,7 @@ export class MoviesPageComponent implements OnInit {
       console.log("ESTAS EN LA PÁGINA PRINCIPAL")
     }else{
       this.p --;
-      this.movielistservice.getMoviePagep(this.p).then(m => this.movies = m);
+      this.movielistservice.getMoviePagep(this.p).subscribe(m => this.movies = m);
     }
   }
   ChangePageUp(){
@@ -34,7 +34,7 @@ export class MoviesPageComponent implements OnInit {
     }else{
     this.p ++;
     console.log(this.p);
-    this.movielistservice.getMoviePagep(this.p).then(m => this.movies = m);
+    this.movielistservice.getMoviePagep(this.p).subscribe(m => this.movies = m);
     }
 
   }
