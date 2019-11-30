@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Headers, Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { Movie } from './Movie';
-import 'rxjs/add/operator/toPromise';
+
 
 @Injectable()
 export class MoviesListServiceService {
 
-  constructor(private http: Http) { }
+  constructor(private http: HttpClient) { }
   getMoviePagep(p:number): Promise<Movie[]>{
     const url = 'https://tv-v2.api-fetch.website/movies/'+p.toString()+'?sort=trending';
     return this.http.get(url).toPromise().then(response => response.json() as Movie[]).catch(this.handleError);

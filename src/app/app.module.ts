@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
 import { AppComponent } from './app.component';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MoviesPageComponent } from './movies-page/movies-page.component';
 import {MoviesListServiceService} from './movies-list-service.service';
@@ -21,7 +21,7 @@ import { TorrentplayerComponent } from './torrentplayer/torrentplayer.component'
   ],
   imports: [
     BrowserModule,
-    HttpModule, NgxPaginationModule,routing
+    HttpClientModule, NgxPaginationModule,routing
   ],
   providers: [MoviesListServiceService,MovieViewService],
   bootstrap: [AppComponent]

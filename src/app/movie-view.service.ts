@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Movie } from './Movie';
-import { Headers, Http } from '@angular/http';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable()
 export class MovieViewService {
 
-  constructor(private http:Http) { }
+  constructor(private http:HttpClient) { }
 
   getMovie(imdb_id:string):Promise<Movie>{
     const url = 'https://tv-v2.api-fetch.website/movie/'+imdb_id;
