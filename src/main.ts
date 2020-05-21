@@ -10,4 +10,4 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
-//Prueba para TP4 Ingenieria de Sw
+//Prueba para TP4 Ingenieria de Sw. Nada importante por acá.
